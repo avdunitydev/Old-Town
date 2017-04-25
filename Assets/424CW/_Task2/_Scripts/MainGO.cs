@@ -17,8 +17,8 @@ public class MainGO : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		Instantiate (ball, new Vector3 (rnd (), rnd (), 0), Quaternion.identity, transform);
-		Instantiate (cube, new Vector3 (rnd (), rnd (), 0), Quaternion.identity, transform);
+		//Instantiate (ball, new Vector3 (rnd (), rnd (), 0), Quaternion.identity, transform);
+		//Instantiate (cube, new Vector3 (rnd (), rnd (), 0), Quaternion.identity, transform);
 
 	}
 	
