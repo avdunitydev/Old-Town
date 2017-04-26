@@ -9,7 +9,7 @@ public class EnemyM : MonoBehaviour
 	Vector2 enemyDirection;
 	int[] DIRECT = { -1, 0, 1 };
 	public EnemyTriger[] enemyTrigers;
-	int i = 0;
+	public int i = 0;
 
 	// Use this for initialization
 	void Start ()
@@ -29,16 +29,18 @@ public class EnemyM : MonoBehaviour
 	{
 		if (enemyTrigers [i].isTriggerEntry && i < enemyTrigers.Length - 1) {
 			direction ();
-			i++;
-		} else if (i == enemyTrigers.Length - 1) {
-			i = 0;
+
+		} 
+		if (i == enemyTrigers.Length - 1) {
+			i = -1;
 		}
+		i++;
 		enemy.AddForce (enemyDirection * 1);
 	}
 
 	void direction ()
 	{
-		enemyDirection = new Vector2 (DIRECT [(int)Random.Range (0, 3)], DIRECT [(int)Random.Range (0, 3)]);
+		enemyDirection = new Vector2 (DIRECT [Random.Range (0, 3)], DIRECT [Random.Range (0, 3)]);
 	}
 
 }
