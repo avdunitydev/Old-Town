@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Character : MonoBehaviour
+public class CharacterZ : MonoBehaviour
 {
 	public float speed;
-	float step;
 	public Rigidbody2D fire;
 	Rigidbody2D mZombie;
 	Vector2 fireDirection;
@@ -22,23 +21,22 @@ public class Character : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		step = speed * Time.deltaTime;
 	}
 
 	void FixedUpdate ()
 	{
 		if (Input.GetKey (KeyCode.W)) {
-			mZombie.velocity = new Vector2 (mZombie.velocity.x, step);
+			mZombie.velocity = new Vector2 (mZombie.velocity.x, (speed * Time.deltaTime));
 		} else if (Input.GetKey (KeyCode.S)) {
-			mZombie.velocity = new Vector2 (mZombie.velocity.x, -step);
+			mZombie.velocity = new Vector2 (mZombie.velocity.x, -(speed * Time.deltaTime));
 		}
 
 		if (Input.GetKey (KeyCode.A)) {
 			sprr.flipX = false;
-			mZombie.velocity = new Vector2 (-step, mZombie.velocity.y);
+			mZombie.velocity = new Vector2 (-(speed * Time.deltaTime), mZombie.velocity.y);
 		} else if (Input.GetKey (KeyCode.D)) {
 			sprr.flipX = true;
-			mZombie.velocity = new Vector2 (step, mZombie.velocity.y);
+			mZombie.velocity = new Vector2 ((speed * Time.deltaTime), mZombie.velocity.y);
 		}
 	}
 }

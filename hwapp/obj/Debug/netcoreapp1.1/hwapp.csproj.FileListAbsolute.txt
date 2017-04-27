@@ -1,0 +1,8 @@
+D:\#UnityProjects\418_oldTown\Old-Town\hwapp\bin\Debug\netcoreapp1.1\hwapp.deps.json
+D:\#UnityProjects\418_oldTown\Old-Town\hwapp\bin\Debug\netcoreapp1.1\hwapp.runtimeconfig.json
+D:\#UnityProjects\418_oldTown\Old-Town\hwapp\bin\Debug\netcoreapp1.1\hwapp.runtimeconfig.dev.json
+D:\#UnityProjects\418_oldTown\Old-Town\hwapp\bin\Debug\netcoreapp1.1\hwapp.dll
+D:\#UnityProjects\418_oldTown\Old-Town\hwapp\bin\Debug\netcoreapp1.1\hwapp.pdb
+D:\#UnityProjects\418_oldTown\Old-Town\hwapp\obj\Debug\netcoreapp1.1\hwapp.AssemblyInfo.cs
+D:\#UnityProjects\418_oldTown\Old-Town\hwapp\obj\Debug\netcoreapp1.1\hwapp.dll
+D:\#UnityProjects\418_oldTown\Old-Town\hwapp\obj\Debug\netcoreapp1.1\hwapp.pdb

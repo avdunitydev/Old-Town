@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterM : MonoBehaviour
+public class FirstCharacterM : MonoBehaviour
 {
 	public float speed;
 	public Rigidbody2D fire;
@@ -22,7 +22,7 @@ public class CharacterM : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		if (Input.GetKeyDown (KeyCode.Space)) {
+		if (Input.GetKeyDown (KeyCode.LeftControl)) {
 			Rigidbody2D bull = Instantiate (fire, transform.position, Quaternion.identity);
 			bull.AddForce (bulletDirection * 600);
 		}
